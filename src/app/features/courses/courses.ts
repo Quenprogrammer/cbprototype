@@ -1,5 +1,7 @@
+type COURSE_HERO="hero1"|"hero2"|"hero3"|"hero4"
 export interface Course {
   id: string;
+  courseHeroType:COURSE_HERO;
   category: string;
   title: string;
   courseImage: string;
@@ -18,6 +20,7 @@ export interface Course {
 
 const webProgrammingCourse: Course = {
   id: "course-001",
+  courseHeroType:"hero1",
   category: "Web Development",
   title: "Web Programming",
   courseImage: "Image Description", // Replace with actual image URL
@@ -55,6 +58,7 @@ const webProgrammingCourse: Course = {
 };
 const animationToolsCourse: Course = {
   id: "course-003",
+  courseHeroType:"hero2",
   category: "Animation Design",
   title: "Comprehensive Animation: Moho and Other Tools",
   courseImage: "Image Description", // Replace with actual image URL
@@ -92,6 +96,7 @@ const animationToolsCourse: Course = {
 };
 const graphicDesignCourse: Course = {
   id: "course-005",
+  courseHeroType:"hero3",
   category: "Graphic Design",
   title: "Fundamentals of Graphic Design",
   courseImage: "Image Description", // Replace with actual image URL
@@ -129,6 +134,7 @@ const graphicDesignCourse: Course = {
 };
 const videoEditingCourse: Course = {
   id: "course-006",
+  courseHeroType:"hero4",
   category: "Video Editing",
   title: "Mastering Video Editing",
   courseImage: "Image Description", // Replace with actual image URL
@@ -166,6 +172,7 @@ const videoEditingCourse: Course = {
 };
 const webDesignCourse: Course = {
   id: "course-007",
+  courseHeroType:"hero3",
   category: "Web Design",
   title: "Web Design Fundamentals",
   courseImage: "Image Description", // Replace with actual image URL
@@ -202,11 +209,10 @@ const webDesignCourse: Course = {
   ]
 };
 export const allCourses:Course[]=[
-  webDesignCourse, animationToolsCourse,graphicDesignCourse,videoEditingCourse,webDesignCourse
+  webDesignCourse, animationToolsCourse,graphicDesignCourse,videoEditingCourse,webDesignCourse,webProgrammingCourse
 ]
-
-
-function findCourseById(courses:Course[], courseId:string):Course{
-return webDesignCourse
-
+export function findCourseById( courseId: string): Course | undefined {
+  return allCourses.find(course => course.id === courseId);
 }
+
+
