@@ -26,7 +26,7 @@ export class HeaderComponent {
   }
 
   private checkRoute(url: string) {
-    const fullScreenRoutes = ['/home', '/courses'];
+    const fullScreenRoutes = ['/home', '/courses','/web'];
     this.isFullScreen = fullScreenRoutes.includes(url);
   }
 

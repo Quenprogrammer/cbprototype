@@ -16,6 +16,11 @@ export const routes: Routes = [
   {path: 'privacy', loadComponent: () => import('./features/privacy/privacy.component').then(_ => _.PrivacyComponent)},
   {path: 'terms', loadComponent: () => import('./features/terms/terms.component').then(_ => _.TermsComponent)},
   {path: 'learningResources', loadComponent: () => import('./features/learning-resources/learning-resources.component').then(_ => _.LearningResourcesComponent)},
+  {path: 'web', loadComponent: () => import('./features/courses/web-programming/web-programming.component').then(_ => _.WebProgrammingComponent)},
+  {path: 'animation', loadComponent: () => import('./features/courses/animation/animation.component').then(_ => _.AnimationComponent)},
+  {path: 'graphicsDesign', loadComponent: () => import('./features/courses/graphic-design/graphic-design.component').then(_ => _.GraphicDesignComponent)},
+  {path: 'webDesign', loadComponent: () => import('./features/courses/web-design/web-design.component').then(_ => _.WebDesignComponent)},
+  {path: 'videoEditing', loadComponent: () => import('./features/courses/video-editing/video-editing.component').then(_ => _.VideoEditingComponent)},
 
 
 
