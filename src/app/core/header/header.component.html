@@ -4,13 +4,13 @@
         data-header-fix-moment="500"
         data-header-fix-effect="slide">
   <div class="u-header__section">
-    <div id="logoAndNav"  style="height: 5rem"  class="container">
+    <div id="logoAndNav"  style="height: 7rem"  class="container">
       <!-- Nav -->
       <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
         <div class="u-header-center-aligned-nav__col">
           <!-- Logo -->
           <a class="" routerLink="." aria-label="Front">
-            <img class="pt-2" src="/logo-sm.svg" height="120"/>
+            <img class="pt-2" src="/logo-sm.svg" height="150"/>
           </a>
           <!-- End Logo -->
 
@@ -37,35 +37,11 @@
                 data-animation-in="slideInUp"
                 data-animation-out="fadeOut"
                 data-position="left">
-              <a routerLink="home" id="homeMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+              <a routerLink="home" id="homeMegaMenu" class="nav-link u-header__nav-link "
                 aria-haspopup="true" aria-expanded="false">Home</a>
 
             </li>
             <!-- End Home -->
-
-            <!-- Blog -->
-            <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                data-event="hover"
-                data-animation-in="slideInUp"
-                data-animation-out="fadeOut">
-              <a routerLink="courses" id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
-                  aria-haspopup="true" aria-expanded="false"
-                 aria-labelledby="blogSubMenu">Courses</a>
-
-              <!-- Blog - Submenu -->
-              <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
-                  aria-labelledby="blogMegaMenu" style="min-width: 230px;">
-                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/card-style.html">Card Style</a></li>
-                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/listing.html">Listing</a></li>
-                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/blog-profile.html">Blog Profile</a>
-                </li>
-                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article.html">Single
-                  Article</a></li>
-              </ul>
-              <!-- End Submenu -->
-            </li>
-            <!-- End Blog -->
-
             <!-- Shop -->
             <li class="nav-item hs-has-mega-menu u-header__nav-item"
                 data-event="hover"
@@ -74,7 +50,7 @@
                 data-max-width="440px"
                 data-position="right">
               <a routerLink="services" id="shopMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
-                  aria-haspopup="true" aria-expanded="false">Services</a>
+                 aria-haspopup="true" aria-expanded="false">Services</a>
 
               <!-- Shop - Mega Menu -->
               <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix--md"
@@ -134,6 +110,30 @@
             </li>
             <!-- End Shop -->
 
+            <!-- Blog -->
+            <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                data-event="hover"
+                data-animation-in="slideInUp"
+                data-animation-out="fadeOut">
+              <a routerLink="courses" id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                  aria-haspopup="true" aria-expanded="false"
+                 aria-labelledby="blogSubMenu">Courses</a>
+
+              <!-- Blog - Submenu -->
+              <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
+                  aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/card-style.html">Card Style</a></li>
+                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/listing.html">Listing</a></li>
+                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/blog-profile.html">Blog Profile</a>
+                </li>
+                <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article.html">Single
+                  Article</a></li>
+              </ul>
+              <!-- End Submenu -->
+            </li>
+
+
+
             <!-- Demos -->
             <li class="nav-item hs-has-mega-menu u-header__nav-item"
                 data-event="hover"
@@ -142,7 +142,7 @@
                 data-max-width="900px"
                 data-position="right">
               <a routerLink="certificate-verification" id="demosMegaMenu"
-                 class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                 class="nav-link u-header__nav-link "
                  aria-haspopup="true" aria-expanded="false">Certificate verification</a>
 
 
@@ -157,7 +157,7 @@
                 data-animation-out="fadeOut"
                 data-max-width="260px"
                 data-position="right">
-              <a routerLink="showcase" id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+              <a routerLink="showcase" id="docsMegaMenu" class="nav-link u-header__nav-link "
                 aria-haspopup="true" aria-expanded="false">Showcase</a>
 
 
@@ -170,7 +170,7 @@
         <!-- Last Item -->
         <div class="u-header-center-aligned-nav__col u-header-center-aligned-nav__col-last-item">
           <a class="btn btn-sm btn-primary transition-3d-hover"
-             routerLink="/" target="_blank">
+             routerLink="/" >
             Contact Us
           </a>
         </div>
