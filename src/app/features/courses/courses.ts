@@ -17,7 +17,7 @@ export interface Course {
   coursesMaterials: string[];
   gallery: string[];
 }
-
+//
 const webProgrammingCourse: Course = {
   id: "course-001",
   courseHeroType:"hero1",
